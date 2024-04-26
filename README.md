@@ -9,9 +9,9 @@ Template Docker action
 ```yaml
 ...
     steps:
-      - uses: actions/checkout@v2
-      - name: Docker Action
-        uses: tj-actions/docker-action@v1
+      - uses: actions/checkout@v4
+      - name: Document Database 
+        uses: tj-actions/db-docs@v1
 ```
 
 ## Inputs

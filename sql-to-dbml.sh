@@ -4,11 +4,11 @@ set -euo pipefail
 
 ARGS=""
 
-if [[ $INPUT_DB_TYPE == 'postgres' ]];
+if [[ $INPUT_DB_TYPE == 'postgres' ]]; then
    ARGS="--postgres"
-elif [[ $INPUT_DB_TYPE == 'mysql' ]];
+elif [[ $INPUT_DB_TYPE == 'mysql' ]]; then
    ARGS="--mysql"
-elif [[ $INPUT_DB_TYPE == 'mssql' ]];
+elif [[ $INPUT_DB_TYPE == 'mssql' ]]; then
    ARGS="--mssql"
 fi
 

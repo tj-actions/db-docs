@@ -14,5 +14,5 @@ fi
 
 echo "Generating dbml file for $INPUT_DB_TYPE database..."
 # shellcheck disable=SC2086
-sql2dbml dump.sql $ARGS > $DBML_OUTPUT_FILE
+sql2dbml dump.sql $ARGS > "$DBML_OUTPUT_FILE"
 echo "Written dbml file: $DBML_OUTPUT_FILE"
